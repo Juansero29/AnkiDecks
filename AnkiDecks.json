@@ -4128,6 +4128,246 @@
                                         "PHP", 
                                         "ProgWeb"
                                     ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "<p>Quels sont les trois paramètres nécessaires pour créer une <code>Connection</code> ? </p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDI4MTEsICJpZCI6ICIxNTE1NzAyNzM3MTc3LTAwMCIsICJtZCI6ICJRdWVscyBzb250IGxlcyB0cm9pcyBwYXJhbVx1MDBlOHRyZXMgblx1MDBlOWNlc3NhaXJlcyBwb3VyIGNyXHUwMGU5ZXIgdW5lIGBDb25uZWN0aW9uYCA/IFxuIn0=---->", 
+                                        "<p>Le <code>$dsn</code>, le <code>$user</code> et le <code>$motDePasse</code></p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDI4NDMsICJpZCI6ICIxNTE1NzAyNzM3MTc3LTAwMSIsICJtZCI6ICJMZSBgJGRzbmAsIGxlIGAkdXNlcmAgZXQgbGUgYCRtb3REZVBhc3NlYFxuIn0=---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "PnRx<kdZ0_", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Qu'est-ce que la DAL?", 
+                                        "<p>La <em>Data Access Layer</em> qui permet de gérer les données, elle utilise la couche métier et la couche persistance</p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDkyOTYsICJpZCI6ICIxNTE1NzAyODQ3MzgyLTAwMSIsICJtZCI6ICJMYSAqRGF0YSBBY2Nlc3MgTGF5ZXIqIHF1aSBwZXJtZXQgZGUgZ1x1MDBlOXJlciBsZXMgZG9ublx1MDBlOWVzLCBlbGxlIHV0aWxpc2UgbGEgY291Y2hlIG1cdTAwZTl0aWVyIGV0IGxhIGNvdWNoZSBwZXJzaXN0YW5jZVxuIn0=---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "jJwdUrU?M", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "<p>Qu'est-ce qu'une <em>gateway</em> ?</p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDM4MzMsICJpZCI6ICIxNTE1NzAzNjU2NTU5LTAwMCIsICJtZCI6ICJRdSZhcG9zO2VzdC1jZSBxdSZhcG9zO3VuZSAqZ2F0ZXdheSogP1xuIn0=---->", 
+                                        "C'est une classe qui agit comme passerelle entre tables et objets métier, une instance manipule toutes les lignes de la table avec du CRUD."
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "GQ~U3-Pv}~", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Comment faire pour ajouter un autre constructeur à une classe en PHP?", 
+                                        "<div class=\"codehilite\" style=\"background: #f8f8f8\" align=\"left\"><pre style=\"line-height: 125%\"><span style=\"color: #8f5902;font-style: italic\">&lt;?php</span>  \n\n<span style=\"color: #000000\">__construct</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #000000\">$name</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #000000\">$age</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #0000cf; font-weight: bold\">18</span><span style=\"color: #000000; font-weight: bold\">)</span>\n<span style=\"color: #000000; font-weight: bold\">{</span>  \n    <span style=\"color: #8f5902; font-style: italic\">// int func_num_args( void) -&gt; retourne nombre d'arguments</span>\n\n    <span style=\"color: #000000\">$argc</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #204a87\">func_num_args</span><span style=\"color: #000000; font-weight: bold\">();</span>\n\n    <span style=\"color: #8f5902; font-style: italic\">// array func_get_args(int x) -&gt; retourne tous les arguments, ou l'argument à la position x</span>\n\n    <span style=\"color: #000000\">$argv</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #204a87\">func_get_args</span><span style=\"color: #000000; font-weight: bold\">();</span>\n\n    <span style=\"color: #204a87; font-weight: bold\">switch</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #000000\">func_nom_args</span><span style=\"color: #000000; font-weight: bold\">)</span>\n    <span style=\"color: #000000; font-weight: bold\">{</span>\n        <span style=\"color: #204a87; font-weight: bold\">case</span> <span style=\"color: #0000cf; font-weight: bold\">1</span><span style=\"color: #ce5c00; font-weight: bold\">:</span>\n\n            <span style=\"color: #8f5902; font-style: italic\">// Faire quelquechose avec argv[0]</span>\n\n            <span style=\"color: #204a87; font-weight: bold\">break</span><span style=\"color: #000000; font-weight: bold\">;</span>\n\n        <span style=\"color: #204a87; font-weight: bold\">case</span> <span style=\"color: #0000cf; font-weight: bold\">2</span><span style=\"color: #ce5c00; font-weight: bold\">:</span>\n\n            <span style=\"color: #8f5902; font-style: italic\">// Faire quelquechose avec agrv[0,1]</span>\n\n            <span style=\"color: #204a87; font-weight: bold\">break</span><span style=\"color: #000000; font-weight: bold\">;</span>\n    <span style=\"color: #000000; font-weight: bold\">}</span>\n<span style=\"color: #000000; font-weight: bold\">}</span>    \n\n<span style=\"color: #8f5902; font-style: italic\">?&gt;</span><span style=\"color: #000000\"></span>\n</pre></div><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDY4NzgsICJpZCI6ICIxNTE1NzA1NzA4MTk3LTAwMSIsICJtZCI6ICJgYGBgcGhwXG4gIFxuJmx0Oz9waHAgIFxuICBcbl9fY29uc3RydWN0KCRuYW1lLCAkYWdlID0gMTgpXG57ICBcbiAgICAvLyBpbnQgZnVuY19udW1fYXJncyggdm9pZCkgLSZndDsgcmV0b3VybmUgbm9tYnJlIGQmYXBvczthcmd1bWVudHNcbiAgXG4gICAgJGFyZ2MgPSBmdW5jX251bV9hcmdzKCk7XG4gIFxuICAgIC8vIGFycmF5IGZ1bmNfZ2V0X2FyZ3MoaW50IHgpIC0mZ3Q7IHJldG91cm5lIHRvdXMgbGVzIGFyZ3VtZW50cywgb3UgbCZhcG9zO2FyZ3VtZW50IFx1MDBlMCBsYSBwb3NpdGlvbiB4XG4gIFxuICAgICRhcmd2ID0gZnVuY19nZXRfYXJncygpO1xuICBcbiAgICBzd2l0Y2goZnVuY19ub21fYXJncylcbiAgICB7XG4gICAgICAgIGNhc2UgMTpcbiAgXG4gICAgICAgICAgICAvLyBGYWlyZSBxdWVscXVlY2hvc2UgYXZlYyBhcmd2WzBdXG4gIFxuICAgICAgICAgICAgYnJlYWs7XG4gIFxuICAgICAgICBjYXNlIDI6XG4gIFxuICAgICAgICAgICAgLy8gRmFpcmUgcXVlbHF1ZWNob3NlIGF2ZWMgYWdydlswLDFdXG4gIFxuICAgICAgICAgICAgYnJlYWs7XG4gICAgfVxufSAgICBcbiAgXG4/Jmd0O1xuICBcbmBgYGBcbiJ9---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "QX/ovEDGRd", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Comment faire une requête qui retourne juste une partie des donées selectionnées?", 
+                                        "<div class=\"codehilite\" style=\"background: #f8f8f8\" align=\"left\"><pre style=\"line-height: 125%\"><span style=\"color: #8f5902;font-style: italic\">&lt;?php</span>  \n\n<span style=\"color: #8f5902; font-style: italic\">// Retourne les premières 30 donées  </span>\n<span style=\"color: #000000\">$sql</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #4e9a06\">\"SELECT * FROM Orders LIMIT 30\"</span><span style=\"color: #000000; font-weight: bold\">;</span>  \n\n<span style=\"color: #8f5902; font-style: italic\">// Retourne 10 elements, commençant à la donnée 16  </span>\n<span style=\"color: #000000\">$sql</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #4e9a06\">\"SELECT * FROM Orders LIMIT 15, 10\"</span><span style=\"color: #000000; font-weight: bold\">;</span>  \n\n\n<span style=\"color: #8f5902; font-style: italic\">?&gt;</span><span style=\"color: #000000\">  </span>\n</pre></div><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDcxMDIsICJpZCI6ICIxNTE1NzA2ODc5OTA2LTAwMSIsICJtZCI6ICJgYGBgcGhwXG4gIFxuICBcbiZsdDs/cGhwICBcbiAgXG4vLyBSZXRvdXJuZSBsZXMgcHJlbWlcdTAwZThyZXMgMzAgZG9uXHUwMGU5ZXMgIFxuJHNxbCA9ICZxdW90O1NFTEVDVCAqIEZST00gT3JkZXJzIExJTUlUIDMwJnF1b3Q7OyAgXG4gIFxuLy8gUmV0b3VybmUgMTAgZWxlbWVudHMsIGNvbW1lblx1MDBlN2FudCBcdTAwZTAgbGEgZG9ublx1MDBlOWUgMTYgIFxuJHNxbCA9ICZxdW90O1NFTEVDVCAqIEZST00gT3JkZXJzIExJTUlUIDE1LCAxMCZxdW90OzsgIFxuICBcbiAgXG4/Jmd0OyAgXG4gIFxuICBcbmBgYGBcbiJ9---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "z|@QQ,J(bQ", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Comment faire pour récuperer le numéro de page qu'on veut afficher (système de multiples pages d'affichage de données)?", 
+                                        "<div class=\"codehilite\" style=\"background: #f8f8f8\" align=\"left\"><pre style=\"line-height: 125%\"><span style=\"color: #000000\">&lt;a href = index.php?p=nbDePage&gt;</span>\n\n<span style=\"color: #8f5902; font-style: italic\">&lt;?php</span>\n\n<span style=\"color: #204a87; font-weight: bold\">if</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #204a87\">isset</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #000000\">$_GET</span><span style=\"color: #000000; font-weight: bold\">[</span><span style=\"color: #4e9a06\">\"p\"</span><span style=\"color: #000000; font-weight: bold\">]))</span>\n<span style=\"color: #000000; font-weight: bold\">{</span>\n    <span style=\"color: #000000\">$indice</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #000000\">$_GET</span><span style=\"color: #000000; font-weight: bold\">[</span><span style=\"color: #4e9a06\">\"p\"</span><span style=\"color: #000000; font-weight: bold\">];</span>\n<span style=\"color: #000000; font-weight: bold\">}</span>  \n\n<span style=\"color: #8f5902; font-style: italic\">// Créer 'Connection' et 'DonnéesGateway'  </span>\n\n<span style=\"color: #8f5902; font-style: italic\">// 'getDonnees' retournera les résultats d'une requête contenant</span>\n<span style=\"color: #8f5902; font-style: italic\">// un nombre d'elements après l'indice passé en paramètres</span>\n\n<span style=\"color: #000000\">$tab</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #000000\">$donneesGateWay</span><span style=\"color: #ce5c00; font-weight: bold\">-&gt;</span><span style=\"color: #c4a000\">getDonnees</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #000000\">$indice</span><span style=\"color: #000000; font-weight: bold\">);</span>\n\n<span style=\"color: #8f5902; font-style: italic\">// Affichage du tableau récuperé</span>\n<span style=\"color: #204a87; font-weight: bold\">require</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #4e9a06\">'afficherResultats.php'</span><span style=\"color: #000000; font-weight: bold\">);</span>  \n</pre></div><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDc0OTYsICJpZCI6ICIxNTE1NzA3MTA3ODU2LTAwMSIsICJtZCI6ICJgYGBgcGhwICBcbiAgXG4mbHQ7YSBocmVmID0gaW5kZXgucGhwP3A9bmJEZVBhZ2UmZ3Q7XG4gIFxuJmx0Oz9waHBcbiAgXG5pZihpc3NldCgkX0dFVFsmcXVvdDtwJnF1b3Q7XSkpXG57XG4gICAgJGluZGljZSA9ICRfR0VUWyZxdW90O3AmcXVvdDtdO1xufSAgXG4gIFxuLy8gQ3JcdTAwZTllciAmYXBvcztDb25uZWN0aW9uJmFwb3M7IGV0ICZhcG9zO0Rvbm5cdTAwZTllc0dhdGV3YXkmYXBvczsgIFxuICBcbi8vICZhcG9zO2dldERvbm5lZXMmYXBvczsgcmV0b3VybmVyYSBsZXMgclx1MDBlOXN1bHRhdHMgZCZhcG9zO3VuZSByZXF1XHUwMGVhdGUgY29udGVuYW50XG4vLyB1biBub21icmUgZCZhcG9zO2VsZW1lbnRzIGFwclx1MDBlOHMgbCZhcG9zO2luZGljZSBwYXNzXHUwMGU5IGVuIHBhcmFtXHUwMGU4dHJlc1xuICBcbiR0YWIgPSAkZG9ubmVlc0dhdGVXYXktJmd0O2dldERvbm5lZXMoJGluZGljZSk7XG4gIFxuLy8gQWZmaWNoYWdlIGR1IHRhYmxlYXUgclx1MDBlOWN1cGVyXHUwMGU5XG5yZXF1aXJlKCZhcG9zO2FmZmljaGVyUmVzdWx0YXRzLnBocCZhcG9zOyk7ICBcbiAgXG5gYGBgXG4ifQ==---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "q3u}hFc&}<", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "<p>Pourquoi le singleton pour la classe <code>Connection</code> ne sert à rien?</p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDc1ODcsICJpZCI6ICIxNTE1NzA3NTA2Mjg3LTAwMCIsICJtZCI6ICJQb3VycXVvaSBsZSBzaW5nbGV0b24gcG91ciBsYSBjbGFzc2UgYENvbm5lY3Rpb25gIG5lIHNlcnQgXHUwMGUwIHJpZW4/XG4ifQ==---->", 
+                                        "Parce qu'on a une instance de l'application par utilisateur, donc on a pas vraiment une duplication de l'instance."
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "nk?C60UhF6", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Comment définir le nombre de controlleurs?", 
+                                        "Il y a un controlleur par acteur."
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "rH#lf~8ZfY", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Il y a quoi à l'interieur d'une classe controlleur?", 
+                                        "<ul>\n<li style=\"text-align: left; \">\n<p>Un <code>switch / case</code> de l'action envoyé pour traiter la requête envoyé par l'utilisateur</p>\n</li>\n<li style=\"text-align: left; \">\n<p>La gestion de l'action nulle.</p>\n</li>\n<li style=\"text-align: left; \">\n<p>La gestion de une action qui n'est pas parmi les actions pour ce controlleur</p>\n</li>\n</ul><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDc5MTIsICJpZCI6ICIxNTE1NzA3NjcyOTY0LTAwMSIsICJtZCI6ICIgIFxuICBcbi0gVW4gYHN3aXRjaCAvIGNhc2VgIGRlIGwmYXBvczthY3Rpb24gZW52b3lcdTAwZTkgcG91ciB0cmFpdGVyIGxhIHJlcXVcdTAwZWF0ZSBlbnZveVx1MDBlOSBwYXIgbCZhcG9zO3V0aWxpc2F0ZXVyXG4gIFxuLSBMYSBnZXN0aW9uIGRlIGwmYXBvczthY3Rpb24gbnVsbGUuXG4gIFxuLSBMYSBnZXN0aW9uIGRlIHVuZSBhY3Rpb24gcXVpIG4mYXBvcztlc3QgcGFzIHBhcm1pIGxlcyBhY3Rpb25zIHBvdXIgY2UgY29udHJvbGxldXJcbiJ9---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "h%+Vgh_b:s", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Il y a quoi à l'intérieur du FrontController?", 
+                                        "<ul>\n<li style=\"text-align: left; \">\n<p>Un tableau d'actions pour chaque acteur</p>\n</li>\n<li style=\"text-align: left; \">\n<p>Vérification que l'action existe, sinon mettre l'action à NULL</p>\n</li>\n<li style=\"text-align: left; \">\n<p>Récuperation de l'user courrant via isAdmin()  </p>\n</li>\n<li style=\"text-align: left; \">\n<p>Appel du bon controlleur en fonction du rôle de l'user et l'action appelée</p>\n</li>\n</ul><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDgxMDEsICJpZCI6ICIxNTE1NzA3OTIxMjg2LTAwMSIsICJtZCI6ICIgIFxuICBcbi0gVW4gdGFibGVhdSBkJmFwb3M7YWN0aW9ucyBwb3VyIGNoYXF1ZSBhY3RldXJcbiAgXG4tIFZcdTAwZTlyaWZpY2F0aW9uIHF1ZSBsJmFwb3M7YWN0aW9uIGV4aXN0ZSwgc2lub24gbWV0dHJlIGwmYXBvczthY3Rpb24gXHUwMGUwIE5VTExcbiAgXG4tIFJcdTAwZTljdXBlcmF0aW9uIGRlIGwmYXBvczt1c2VyIGNvdXJyYW50IHZpYSBpc0FkbWluKCkgIFxuICBcbi0gQXBwZWwgZHUgYm9uIGNvbnRyb2xsZXVyIGVuIGZvbmN0aW9uIGR1IHJcdTAwZjRsZSBkZSBsJmFwb3M7dXNlciBldCBsJmFwb3M7YWN0aW9uIGFwcGVsXHUwMGU5ZVxuIn0=---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "Jfw}#Or@,)", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Quel est le seul code PHP dans une vue?", 
+                                        "<p>Des vérifications <code>isset()</code> pour les variables à afficher et des foreach, for, while, if qui vont montrer des éléments UI en fonction de l'user.</p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDg0MTAsICJpZCI6ICIxNTE1NzA4MTExNzQwLTAwMSIsICJtZCI6ICJEZXMgdlx1MDBlOXJpZmljYXRpb25zIGBpc3NldCgpYCBwb3VyIGxlcyB2YXJpYWJsZXMgXHUwMGUwIGFmZmljaGVyIGV0IGRlcyBmb3JlYWNoLCBmb3IsIHdoaWxlLCBpZiBxdWkgdm9udCBtb250cmVyIGRlcyBcdTAwZTlsXHUwMGU5bWVudHMgVUkgZW4gZm9uY3Rpb24gZGUgbCZhcG9zO3VzZXIuXG4ifQ==---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "w!X,mb,Jh,", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Code HTML d'un bouton qui envoie le code au controller avec une action pour ajouter une tâche?", 
+                                        "<div class=\"codehilite\" style=\"background: #f8f8f8\" align=\"left\"><pre style=\"line-height: 125%\"><span style=\"color: #204a87;font-weight: bold\">&lt;form</span> <span style=\"color: #c4a000\">method=</span><span style=\"color: #4e9a06\">\"post\"</span><span style=\"color: #204a87; font-weight: bold\">&gt;</span>\n    <span style=\"color: #204a87; font-weight: bold\">&lt;button</span> <span style=\"color: #c4a000\">type=</span><span style=\"color: #4e9a06\">\"submit\"</span> <span style=\"color: #c4a000\">name=</span><span style=\"color: #4e9a06\">\"action\"</span><span style=\"color: #204a87; font-weight: bold\">&gt;</span>\n        Ajouter une tâche\n    <span style=\"color: #204a87; font-weight: bold\">&lt;/button&gt;</span>\n     <span style=\"color: #204a87; font-weight: bold\">&lt;input</span> <span style=\"color: #c4a000\">type=</span><span style=\"color: #4e9a06\">\"hidden\"</span> <span style=\"color: #c4a000\">name=</span><span style=\"color: #4e9a06\">\"action\"</span> <span style=\"color: #c4a000\">value=</span><span style=\"color: #4e9a06\">\"ajouterUneTache\"</span><span style=\"color: #204a87; font-weight: bold\">&gt;</span>\n<span style=\"color: #204a87; font-weight: bold\">&lt;/form&gt;</span>\n</pre></div><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDg4MTQsICJpZCI6ICIxNTE1NzA4NzIxMTc3LTAwMSIsICJtZCI6ICIgICAgJmx0O2Zvcm0gbWV0aG9kPSZxdW90O3Bvc3QmcXVvdDsmZ3Q7XG4gICAgICAgICZsdDtidXR0b24gdHlwZT0mcXVvdDtzdWJtaXQmcXVvdDsgbmFtZT0mcXVvdDthY3Rpb24mcXVvdDsmZ3Q7XG4gICAgICAgICAgICBBam91dGVyIHVuZSB0XHUwMGUyY2hlXG4gICAgICAgICZsdDsvYnV0dG9uJmd0O1xuICAgICAgICAgJmx0O2lucHV0IHR5cGU9JnF1b3Q7aGlkZGVuJnF1b3Q7IG5hbWU9JnF1b3Q7YWN0aW9uJnF1b3Q7IHZhbHVlPSZxdW90O2Fqb3V0ZXJVbmVUYWNoZSZxdW90OyZndDtcbiAgICAmbHQ7L2Zvcm0mZ3Q7XG4ifQ==---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "Llh%-/bmM#", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Que contient le modèle?", 
+                                        "Il contient les Gateways et l'instance de Connection."
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "EYT`A4&9nj", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "<p>Une classe <code>ModeleAdmin</code> aurait quels méthodes?</p><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDkwMzMsICJpZCI6ICIxNTE1NzA4OTg2Mzg0LTAwMCIsICJtZCI6ICJVbmUgY2xhc3NlIGBNb2RlbGVBZG1pbmAgYXVyYWl0IHF1ZWxzIG1cdTAwZTl0aG9kZXM/XG4ifQ==---->", 
+                                        "<ul>\n<li style=\"text-align: left; \">\n<p><code>public function login($username, $password)</code></p>\n</li>\n<li style=\"text-align: left; \">\n<p><code>public function isAdmin()</code></p>\n</li>\n</ul><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDkyNzIsICJpZCI6ICIxNTE1NzA4OTg2Mzg0LTAwMSIsICJtZCI6ICIgIFxuICBcbi0gYHB1YmxpYyBmdW5jdGlvbiBsb2dpbigkdXNlcm5hbWUsICRwYXNzd29yZClgXG4gIFxuLSBgcHVibGljIGZ1bmN0aW9uIGlzQWRtaW4oKWBcbiJ9---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "GmNCl[Wp!h", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Comment stocker le nombre de fois que quelqu'un visite un site?", 
+                                        "<p>Cela se fait dans le modèle via des <code>cookies</code> </p>\n<div class=\"codehilite\" style=\"background: #f8f8f8\" align=\"left\"><pre style=\"line-height: 125%\"><span style=\"color: #8f5902;font-style: italic\">&lt;?php</span>  \n\n<span style=\"color: #204a87; font-weight: bold\">if</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #000000\">$_COOKIE</span><span style=\"color: #000000; font-weight: bold\">[</span><span style=\"color: #4e9a06\">'cpt'</span><span style=\"color: #000000; font-weight: bold\">]</span> <span style=\"color: #ce5c00; font-weight: bold\">==</span> <span style=\"color: #204a87; font-weight: bold\">null</span><span style=\"color: #000000; font-weight: bold\">)</span>  \n<span style=\"color: #000000; font-weight: bold\">{</span>\n    <span style=\"color: #204a87\">setcookie</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #4e9a06\">\"cpt\"</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #0000cf; font-weight: bold\">0</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #204a87\">time</span><span style=\"color: #000000; font-weight: bold\">()</span> <span style=\"color: #ce5c00; font-weight: bold\">+</span> <span style=\"color: #0000cf; font-weight: bold\">365</span> <span style=\"color: #ce5c00; font-weight: bold\">*</span> <span style=\"color: #0000cf; font-weight: bold\">25</span> <span style=\"color: #ce5c00; font-weight: bold\">*</span><span style=\"color: #0000cf; font-weight: bold\">3600</span><span style=\"color: #000000; font-weight: bold\">);</span>  \n<span style=\"color: #000000; font-weight: bold\">}</span> <span style=\"color: #204a87; font-weight: bold\">else</span>   \n<span style=\"color: #000000; font-weight: bold\">{</span>  \n    <span style=\"color: #204a87\">setcookie</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #4e9a06\">\"cpt\"</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #000000\">$_COOKIE</span><span style=\"color: #000000; font-weight: bold\">[</span><span style=\"color: #4e9a06\">'cpt'</span><span style=\"color: #000000; font-weight: bold\">]</span> <span style=\"color: #ce5c00; font-weight: bold\">+</span> <span style=\"color: #0000cf; font-weight: bold\">1</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #204a87\">time</span><span style=\"color: #000000; font-weight: bold\">()</span> <span style=\"color: #ce5c00; font-weight: bold\">+</span> <span style=\"color: #0000cf; font-weight: bold\">365</span> <span style=\"color: #ce5c00; font-weight: bold\">*</span> <span style=\"color: #0000cf; font-weight: bold\">24</span> <span style=\"color: #ce5c00; font-weight: bold\">*</span> <span style=\"color: #0000cf; font-weight: bold\">3600</span><span style=\"color: #000000; font-weight: bold\">);</span>  \n<span style=\"color: #000000; font-weight: bold\">}</span>  \n\n<span style=\"color: #8f5902; font-style: italic\">?&gt;</span><span style=\"color: #000000\">  </span>\n</pre></div><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDk1NDUsICJpZCI6ICIxNTE1NzA5MDIyMTgyLTAwMSIsICJtZCI6ICJDZWxhIHNlIGZhaXQgZGFucyBsZSBtb2RcdTAwZThsZSB2aWEgZGVzIGBjb29raWVzYCAgXG4gIFxuYGBgYHBocCAgXG4gIFxuJmx0Oz9waHAgIFxuICBcbmlmKCRfQ09PS0lFWyZhcG9zO2NwdCZhcG9zO10gPT0gbnVsbCkgIFxue1xuICAgIHNldGNvb2tpZSgmcXVvdDtjcHQmcXVvdDssIDAsIHRpbWUoKSArIDM2NSAqIDI1ICozNjAwKTsgIFxufSBlbHNlICAgXG57ICBcbiAgICBzZXRjb29raWUoJnF1b3Q7Y3B0JnF1b3Q7LCAkX0NPT0tJRVsmYXBvcztjcHQmYXBvcztdICsgMSwgdGltZSgpICsgMzY1ICogMjQgKiAzNjAwKTsgIFxufSAgXG4gIFxuPyZndDsgIFxuICBcbmBgYGBcbiJ9---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "zj*wA4c%Xk", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
+                                }, 
+                                {
+                                    "__type__": "Note", 
+                                    "data": "", 
+                                    "fields": [
+                                        "Comment garder un objet dans une session PHP?", 
+                                        "<div class=\"codehilite\" style=\"background: #f8f8f8\" align=\"left\"><pre style=\"line-height: 125%\"><span style=\"color: #8f5902;font-style: italic\">&lt;?php</span>  \n\n<span style=\"color: #000000\">$tab</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #204a87; font-weight: bold\">array</span><span style=\"color: #000000; font-weight: bold\">(</span><span style=\"color: #4e9a06\">\"truc1\"</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #4e9a06\">\"truc2\"</span><span style=\"color: #000000; font-weight: bold\">,</span> <span style=\"color: #4e9a06\">\"truc3\"</span><span style=\"color: #000000; font-weight: bold\">);</span>\n\n<span style=\"color: #000000\">$_SESSION</span><span style=\"color: #000000; font-weight: bold\">[</span><span style=\"color: #4e9a06\">'caddie'</span><span style=\"color: #000000; font-weight: bold\">]</span> <span style=\"color: #ce5c00; font-weight: bold\">=</span> <span style=\"color: #000000\">$tab</span><span style=\"color: #000000; font-weight: bold\">;</span>  \n\n<span style=\"color: #8f5902; font-style: italic\">?&gt;</span><span style=\"color: #000000\">  </span>\n</pre></div><!----SBAdata:eyJpc2NvbnZlcnRlZCI6ICJUcnVlIiwgImxhc3Rtb2RpZmllZCI6IDE1MTU3MDk3OTQsICJpZCI6ICIxNTE1NzA5NTY0NDQ2LTAwMSIsICJtZCI6ICJgYGBgcGhwICBcbiAgXG4mbHQ7P3BocCAgXG4gIFxuJHRhYiA9IGFycmF5KCZxdW90O3RydWMxJnF1b3Q7LCAmcXVvdDt0cnVjMiZxdW90OywgJnF1b3Q7dHJ1YzMmcXVvdDspO1xuICBcbiRfU0VTU0lPTlsmYXBvcztjYWRkaWUmYXBvcztdID0gJHRhYjsgIFxuICBcbj8mZ3Q7ICBcbiAgXG4gIFxuYGBgYFxuIn0=---->"
+                                    ], 
+                                    "flags": 0, 
+                                    "guid": "w3oD``wD}>", 
+                                    "note_model_uuid": "62fe4043-f6b6-11e7-a999-4851b7c6a3bc", 
+                                    "tags": [
+                                        "PHP", 
+                                        "ProgWeb"
+                                    ]
                                 }
                             ]
                         }, 
