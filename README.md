@@ -1,2 +1,2 @@
 # AnkiDecks
-My Anki decks for Computer Science organized by language and subject
+My Anki decks sorted by language then by subject. Enjoy!
